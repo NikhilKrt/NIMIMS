@@ -1,0 +1,127 @@
+html{
+	font-size: 10px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Signika Negative', sans-serif;
+	text-align: center;
+	line-height: 1.3;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	vertical-align: bottom;
+}
+
+select{
+	border:none;
+	width: 100%;
+	height: 100%;
+	font-size: 1.2em;
+}
+
+.programs input {
+	display: none;
+}
+
+.cover, .future {
+	display: grid;
+	grid-template-columns: 5% 90% 5%;
+}
+
+.coverCont, .futureCont {
+	grid-column: 2;
+	display: grid;
+}
+
+.cover{
+	background: url(img/cover.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 40px 0;
+}
+
+.coverCont {
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 20px;
+}
+
+.coverCont .cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.coverCont .coverForm {
+	background-color: #fff;
+	padding: 15px;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+.coverCont .form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:  repeat(5, 1fr);
+	grid-row-gap: 15px;
+}
+
+.coverCont .form .inputs {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	grid-row-gap: 10px;
+	text-align: left;
+}
+
+.cover .btns .btn{
+	width: 100%;
+    box-shadow: 2px 2px 7px 1px #b5b5b5;
+    background: #ce3036;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: 2px solid #ce3036;
+}
+
+.cover .btns .btn:hover {
+	cursor: pointer;
+    color: #ce3036;
+    background-color: white;
+    box-shadow: 3px 3px 9px 1px #ce3036;
+}
+
+input, select{
+	border:none;
+	width: 100%;
+}
+
+input.input, input.input::placeholder{
+	text-indent: 20px;
+}
+
+.inputs select.dropdown:invalid{
+	text-indent: 15px;
+}
+
+input.input::placeholder {
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+.inputs select.dropdown:invalid {
+    color: #b3b3b3;
+    font-size: 20px;
+}
